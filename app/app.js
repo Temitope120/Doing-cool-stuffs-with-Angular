@@ -10,7 +10,12 @@ myNewApp.controller('SchoolController', ['$scope', function($scope){
     $scope.newDev = function(boy) {
         $scope.boys.push({
             name: $scope.newdev.name,
+            role: $scope.newdev.role,
+            tag: $scope.newdev.tag
         });
+         $scope.newdev.name ="";
+         $scope.newdev.role ="";
+         $scope.newdev.tag ="";
     }
 
 
