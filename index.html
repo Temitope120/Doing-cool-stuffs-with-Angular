@@ -43,7 +43,7 @@
     
               <!-- <input type="text" ng-model="search" placeholder="search for a Dev">
               <ul>
-                  <li ng-repeat="boy in boys | orderBy: name | filter: search">{{boy.name}}</li> -->
+                  <li ng-repeat="dev in devs | orderBy: name | filter: search">{{dev.name}}</li> -->
                   <!-- working 
                   
               </ul> -->
@@ -53,9 +53,10 @@
               <button ng-click= "order='role'"> order by a Dev role</button>
               <input type="text" ng-model="search" placeholder="search for a Dev">
     
-              <li ng-repeat="boy in boys | orderBy: order | filter: search">{{boy.name}}
-                <span>{{boy.role}}</span>
-                <p class="belt" style="background: {{boy.tag}}"> {{boy.tag}} tag</p>
+              <li ng-repeat="dev in devs | orderBy: order | filter: search">
+                <h3> {{dev.name}} -{{dev.role}}</h3>
+                <div class="remove" ng-click="removeDev(dev)"> x</div>
+                <span class="belt" style="background: {{dev.tag}}"> {{dev.tag}} tag</span>
               </li>
 
               <br>

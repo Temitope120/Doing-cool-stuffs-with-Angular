@@ -6,9 +6,16 @@ myNewApp.controller('SchoolController', ['$scope', function($scope){
     $scope.NewMessage = "hey y'all";
     
 
+    // to delete a dev
+    $scope.removeDev = function(dev){
+        var removedDev =$scope.devs.indexOf(dev);
+        $scope.devs.splice(removedDev, 1);
+    }
+
+
     // adding a new Dev
-    $scope.newDev = function(boy) {
-        $scope.boys.push({
+    $scope.newDev = function(dev) {
+        $scope.devs.push({
             name: $scope.newdev.name,
             role: $scope.newdev.role,
             tag: $scope.newdev.tag
@@ -22,7 +29,7 @@ myNewApp.controller('SchoolController', ['$scope', function($scope){
     $scope.schools = ['Adekunle Ajasin', 'TASUED', 'Babcock ','Lasu'];
     $scope.menuList= ["Rice", "jollof", "cocktail"];
 
-    $scope.boys=
+    $scope.devs=
     [  {
         name: "Joshua",
         role: "Frontend Developer",
