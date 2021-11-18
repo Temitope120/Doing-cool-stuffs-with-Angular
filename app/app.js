@@ -22,7 +22,7 @@ $routeProvider
 
 
 
-myNewApp.controller('devController', ['$scope', function($scope){    
+myNewApp.controller('devController', ['$scope', '$http', function($scope, $http){    
 
     // to delete a dev
     $scope.removeDev = function(dev){
@@ -47,61 +47,73 @@ myNewApp.controller('devController', ['$scope', function($scope){
     $scope.schools = ['Adekunle Ajasin', 'TASUED', 'Babcock ','Lasu'];
     $scope.menuList= ["Rice", "jollof", "cocktail"];
 
-    $scope.devs=
-    [  {
-        name: "Joshua",
-        role: "Frontend Developer",
-        tag: "green"
-        },
 
-        {
-            name: "John",
-            role: "Backend Developer",
-            tag: "violet"
-        },
+    // while using json, no need to outcode this:
+    // $scope.devs=
+    // [  {
+    //     name: "Joshua",
+    //     role: "Frontend Developer",
+    //     tag: "green"
+    //     },
 
-        {
-            name: "Joshua",
-            role: "Product Manager",
-            tag: "grey"
-        },
-        {
-            name: "Robin",
-            role: "Data Scientist",
-            tag: "violet"
-        },
+    //     {
+    //         name: "John",
+    //         role: "Backend Developer",
+    //         tag: "violet"
+    //     },
 
-        {
-            name: "Kehinde",
-            role: "Product Manager",
-            tag: "grey"
-        },
+    //     {
+    //         name: "Joshua",
+    //         role: "Product Manager",
+    //         tag: "grey"
+    //     },
+    //     {
+    //         name: "Robin",
+    //         role: "Data Scientist",
+    //         tag: "violet"
+    //     },
 
-        {
-            name: "Usman",
-            role: "Data Analyst",
-            tag: "pink"
-        },
+    //     {
+    //         name: "Kehinde",
+    //         role: "Product Manager",
+    //         tag: "grey"
+    //     },
 
-        {
-            name: "Moses",
-            role: "Software Tester",
-            tag: "black"
-        },
+    //     {
+    //         name: "Usman",
+    //         role: "Data Analyst",
+    //         tag: "pink"
+    //     },
 
-        {
-            name: "Adeyanju",
-            role: "Software Tester",
-            tag: "brown"
-        },
-        {
-            name: "Damilola",
-            role: "Frontend Developer",
-            tag: "grey"
-        }
+    //     {
+    //         name: "Moses",
+    //         role: "Software Tester",
+    //         tag: "black"
+    //     },
+
+    //     {
+    //         name: "Adeyanju",
+    //         role: "Software Tester",
+    //         tag: "brown"
+    //     },
+    //     {
+    //         name: "Damilola",
+    //         role: "Frontend Developer",
+    //         tag: "grey"
+    //     }
 
 
-    ]
+    // ]
 
+
+    // to use json:Make sure to use this inside the controller and not outside
+// console.log(angular.toJson($scope.devs));
+
+$http.get('data/devs.json').success(function(data){
+
+    $scope.devs = data;
+});
 }]);
+
+
 
