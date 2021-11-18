@@ -1,0 +1,24 @@
+<div class="content">
+    <button ng-click= "order='name'"> order by a Dev's name</button>
+    <button ng-click= "order='role'"> order by a Dev role</button>
+    <input type="text" ng-model="search" placeholder="search for a Dev">
+
+    <li ng-repeat="dev in devs | orderBy: order | filter: search">
+    <h3> {{dev.name}} -{{dev.role}}</h3>
+    <div class="remove" ng-click="removeDev(dev)"> x</div>
+    <span class="belt" style="background:{{dev.tag}}"> {{dev.tag}} tag</span>
+    </li>
+
+    <br>
+    <!-- to add a new dev -->
+    <form ng-submit ="newDev()">
+        <input type="text" placeholder="name" ng-model="newdev.name">
+        <input type="text" placeholder="role" ng-model="newdev.role">
+        <input type="text" placeholder="tag color" ng-model="newdev.tag">
+        <input type="submit" value="Add a new Dev">
+    </form>
+</div>
+
+
+
+

@@ -1,10 +1,28 @@
-var myNewApp = angular.module('myAngularProject', []);
+var myNewApp = angular.module('myAngularProject', ['ngRoute']);
 
 
-myNewApp.controller('SchoolController', ['$scope', function($scope){
-    $scope.message= "Hello world!";
-    $scope.NewMessage = "hey y'all";
-    
+myNewApp.config(['$routeProvider', function($routeProvider){
+
+$routeProvider
+    .when('/home', {
+    templateUrl: 'views/home.html'
+})
+    .when('/devs', {
+    templateUrl: 'views/devs.html',
+    controller: 'devController'
+}).otherwise({
+    redirectTo: '/home'
+})
+
+}]);
+
+
+
+  
+
+
+
+myNewApp.controller('devController', ['$scope', function($scope){    
 
     // to delete a dev
     $scope.removeDev = function(dev){
