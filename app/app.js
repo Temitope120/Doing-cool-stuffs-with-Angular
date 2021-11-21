@@ -1,4 +1,4 @@
-var myNewApp = angular.module('myAngularProject', ['ngRoute']);
+var myNewApp = angular.module('myAngularProject', ['ngRoute', 'ngAnimate']);
 
 
 myNewApp.config(['$routeProvider', function($routeProvider){
@@ -45,7 +45,7 @@ myNewApp.directive('randomDev', [function(){
         transclude: true,
         // to replace the custom directive with an html tag as soon as it's displayed on the browser.The replace property will replace the custom directive with the outermost tag/ its parent tag name instead.
         // not working
-        // replace: true,
+        replace: true,
 
         controller: function($scope){
          // to get random images
@@ -107,7 +107,7 @@ $http({
     
 }).then(function mySuccess(response){
     $scope.devs = response.data;
-    console.log($scope.devs[0].role);
+
 
 });
 

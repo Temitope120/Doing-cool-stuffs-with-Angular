@@ -127,3 +127,40 @@ main{
   cursor: pointer;
   margin-left: 10px;
 }
+
+
+
+/* animations: Angular uses ome clases for its animations, ng-enter is for how eleements enters into the page view at the starting point while ng-enter-active is the end pont wheere the animation has finished loading. The reason why main is here is bcos we're animating the main tag which controls all the views of this project */
+main.ng-enter{
+  transition: 0.5s linear all;
+  opacity: 0;
+}
+main.ng-enter.ng-enter-active{
+  opacity: 1;
+}
+
+/* to animate the devs: while adding a new dev */
+#devs-list li.ng-enter{
+  transition: .8s linear all;
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+#devs-list li.ng-enter.ng-enter-active{
+  
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* .ng-leave to control hw elements leaves still for devs-list when cancelleing a dev. to make it roll off the page to the left */
+#devs-list li.ng-leave{
+  transition: .6s linear all;
+  opacity: 0;
+  transform: translateX(0);
+}
+
+#devs-list li.ng-leave.ng-leave-active{
+  
+  opacity: 1;
+  transform: translateX(-100%);
+}
