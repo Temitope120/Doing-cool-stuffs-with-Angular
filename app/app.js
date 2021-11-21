@@ -8,6 +8,18 @@ $routeProvider
     templateUrl: 'views/home.html',
     controller: 'devController'
 })
+
+.when('/contact', {
+    templateUrl: 'views/contact.html',
+    // set up a contact controler
+    controller: 'ContactController'
+})
+
+.when('/contact-success', {
+    templateUrl: 'views/contact-success.html',
+    // set up a contact controler
+    controller: 'ContactController'
+})
     .when('/devs', {
     templateUrl: 'views/devs.html',
     controller: 'devController'
@@ -93,7 +105,10 @@ myNewApp.controller('devController', ['$scope', '$http', function($scope, $http)
          $scope.newdev.tag ="";
     }
 
-
+    // to remove all devs
+    $scope.removeAll = function(){
+        $scope.devs = [];
+    };
 
 // $http.get('data/devs.json').then(function(data){
 
@@ -126,6 +141,17 @@ $http({
 
 // use .then  and not .success bcos of the version of angular higher than 1.4.3
 
+}]);
+
+
+// set up a contact controler: Location service is used to send info to another url
+myNewApp.controller('ContactController', ['$scope','$location', function($scope, $location){
+    $scope.sendMessage = function() {
+        // so to send the form to a different url
+        $location.path('/contact-success');
+
+        // to make sure the user gets redirected to the contact-success page, set up a route for contact-success.html above in the $routeProvider
+    };
 }]);
 
 

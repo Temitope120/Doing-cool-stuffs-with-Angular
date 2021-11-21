@@ -62,6 +62,7 @@ main{
 
 .content{
   padding: 20px;
+  overflow: hidden;
 }
 
 .content button,
@@ -164,3 +165,26 @@ main.ng-enter.ng-enter-active{
   opacity: 1;
   transform: translateX(-100%);
 }
+
+
+/* Using the stagger effect: used for animating more items at once .. The animation below, will make each dev to leave the page one at a time very quickly*/
+#devs-list li.ng-leave-stagger{
+  transition-delay: .2s;
+  transition-duration: 0;
+  /* to stop it from inheriting ny other transition. Recommended by Angular */
+}
+
+
+/* For the contact form: maiking the fields valid or invalid */
+/* to make a user recognize an invalid input into any of the fields after they've typed something */
+input.ng-invalid.ng-touched, textarea.ng-invalid.ng-touched{
+  border: 2px solid red;
+}
+
+/* to disable to send input */
+input[disabled="disabled"]{
+  opacity: 0.4;
+  cursor: not-allowed !important;
+}
+
+

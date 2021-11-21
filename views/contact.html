@@ -1,0 +1,32 @@
+<div class="content">
+    <form name="contactform"  ng-submit="sendMessage()" novalidate>
+        <input type="text" placeholder="name" name="name" ng-model="contact.name" ng-required="true">
+
+        <!-- using angular properties: to see how they change -->
+        <!-- <span>
+            $pristine - {{contactform.name.$pristine}},
+            $dirty - {{contactform.name.$dirty}},
+            $untouched  - {{contactform.name.$untouched}},
+            $touched    - {{contactform.name.$touched}},
+            $invalid - {{contactform.name.$invalid}},
+            $valid - {{contactform.name.$valid}},
+        </span> -->
+
+        <!-- to make a user know if they put in an invalid input -->
+        <!-- && will work when both conditions are true and not just one of them -->
+        <div ng-show="contactform.name.$touched && contactform.name.$invalid">
+            <small style="color: red; text-align: center; display: block;"> Enter a valid name</small>
+        </div>
+        <input type="email" placeholder="Email" name="email"  ng-model="contact.email" ng-required="true">
+
+        <div ng-show="contactform.email.$touched && contactform.email.$invalid">
+            <small style="color: red; text-align: center; display: block;"> Enter a valid email</small>
+        </div>
+        <textarea name="message" placeholder="Your message" rows="2" cols="60" style="width: 60vw;" ng-model="contact.message" ng-required="true"></textarea>
+        <input type="submit" value="Send" ng-disabled= "contactform.$invalid"/>
+
+        <!-- using ng-disabled on the submit input: the form won't submit if the inputs are not valid and add a css style to it to show it's disabled -->
+
+        <!-- to submit this form, create a function that would fire as soon as the send button is clicked, but before it works, it need a controller in the app.js file -->
+    </form>
+</div>
