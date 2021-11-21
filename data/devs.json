@@ -14,37 +14,37 @@
 	"name": "Joshua",
 	"role": "Product Manager",
 	"tag": "grey",
-	"thumb": "content/img/data.jpg",
+	"thumb": "content/img/product-manager.jpg",
 	"about": "A product manager is the person who identifies the customer need and the larger business objectives that a product or feature will fulfill, articulates what success looks like for a product, and rallies a team to turn that vision into a reality."
 }, {
 	"name": "Robin",
 	"role": "Data Scientist",
 	"tag": "violet",
-	"thumb": "content/img/frontend.jpg",
+	"thumb": "content/img/data-scientist.jpg",
 	"about": "A data scientist is a professional responsible for collecting, analyzing and interpreting extremely large amounts of data. The data scientist role is an offshoot of several traditional technical roles, including mathematician, scientist, statistician and computer professional."
 }, {
 	"name": "Kehinde",
 	"role": "Product Manager",
 	"tag": "grey",
-	"thumb": "content/img/data.jpg",
+	"thumb": "content/img/product-manager.jpg",
 	"about": "A product manager is the person who identifies the customer need and the larger business objectives that a product or feature will fulfill, articulates what success looks like for a product, and rallies a team to turn that vision into a reality."
 }, {
 	"name": "Usman",
 	"role": "Data Analyst",
 	"tag": "pink",
-	"thumb": "content/img/frontend.jpg",
+	"thumb": "content/img/data-analyst.jpg",
 	"about": "A Data Analyst has the responsibility of Designing and maintaining data systems and databases; this includes fixing coding errors and other data-related problems. Using statistical tools to interpret data sets, paying particular attention to trends and patterns that could be valuable for diagnostic and predictive analytics efforts."
 }, {
 	"name": "Moses",
 	"role": "Software Tester",
 	"tag": "black",
-	"thumb": "content/img/backend.jpg",
+	"thumb": "content/img/software-tester.jpg",
 	"about":"A software tester is involved in the quality assurance stage of software development and deployment. Also conducts automated and manual tests to ensure the software created by developers is fit for purpose and any bugs or issues are removed within a product before it gets deployed to everyday users."
 }, {
 	"name": "Adeyanju",
 	"role": "Software Tester",
 	"tag": "brown",
-	"thumb": "content/img/data.jpg",
+	"thumb": "content/img/software-tester.jpg",
 	"about": "A software tester is involved in the quality assurance stage of software development and deployment. Also conducts automated and manual tests to ensure the software created by developers is fit for purpose and any bugs or issues are removed within a product before it gets deployed to everyday users."
 }, {
 	"name": "Damilola",
