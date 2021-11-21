@@ -44,7 +44,7 @@ h1,h2,h3{
 }
 
 #menu-bar li{
-  float: right;
+  float: left;
   margin-left: 20px;
 }
 
