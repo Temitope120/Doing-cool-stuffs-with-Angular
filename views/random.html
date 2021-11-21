@@ -1,5 +1,22 @@
 <div ng-transclude> 
-    <h4> {{title}}</h4>
+    <div style="text-align: center;">
+        <h4>  {{title}}</h4>
+
+
+        <img src="{{devs[random].thumb}}" style="width: 100px">
+        <!-- to generate random roles of different devs as their images are displayed -->
+        <h3>{{devs[random].role}} </h3>
+
+        <p> {{devs[random].about}} </p>
+
+
+    
+    </div>
 </div>
+
+
+
+
+
 
 

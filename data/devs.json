@@ -1,37 +1,55 @@
 [{
 	"name": "Joshua",
 	"role": "Frontend Developer",
-	"tag": "green"
+	"tag": "green",
+	"thumb": "content/img/frontend.jpg",
+	"about": "Front-end web development is the development of the graphical user interface of a website, through the use of HTML, CSS, and JavaScript, so that users can view and interact with that website. "
 }, {
 	"name": "John",
 	"role": "Backend Developer",
-	"tag": "violet"
+	"tag": "violet",
+	"thumb": "content/img/backend.jpg",
+	"about": "Backend Development is also known as server-side development. It is everything that the users don't see and contains behind-the-scenes activities that occur when performing any action on a website. It focuses primarily on databases, backend logic, APIs, and Servers. ... Thus, it is known as the backend."
 }, {
 	"name": "Joshua",
 	"role": "Product Manager",
-	"tag": "grey"
+	"tag": "grey",
+	"thumb": "content/img/data.jpg",
+	"about": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo similique nulla inventore molestias minima consequuntur architecto repellendus ducimus eaque aperiam tenetur, sapiente rerum repellat accusamus dolor, in, esse ad? Alias."
 }, {
 	"name": "Robin",
 	"role": "Data Scientist",
-	"tag": "violet"
+	"tag": "violet",
+	"thumb": "content/img/frontend.jpg",
+	"about": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo similique nulla inventore molestias minima consequuntur architecto repellendus ducimus eaque aperiam tenetur, sapiente rerum repellat accusamus dolor, in, esse ad? Alias."
 }, {
 	"name": "Kehinde",
 	"role": "Product Manager",
-	"tag": "grey"
+	"tag": "grey",
+	"thumb": "content/img/data.jpg",
+	"about": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo similique nulla inventore molestias minima consequuntur architecto repellendus ducimus eaque aperiam tenetur, sapiente rerum repellat accusamus dolor, in, esse ad? Alias."
 }, {
 	"name": "Usman",
 	"role": "Data Analyst",
-	"tag": "pink"
+	"tag": "pink",
+	"thumb": "content/img/frontend.jpg",
+	"about": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo similique nulla inventore molestias minima consequuntur architecto repellendus ducimus eaque aperiam tenetur, sapiente rerum repellat accusamus dolor, in, esse ad? Alias."
 }, {
 	"name": "Moses",
 	"role": "Software Tester",
-	"tag": "black"
+	"tag": "black",
+	"thumb": "content/img/backend.jpg",
+	"about": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo similique nulla inventore molestias minima consequuntur architecto repellendus ducimus eaque aperiam tenetur, sapiente rerum repellat accusamus dolor, in, esse ad? Alias."
 }, {
 	"name": "Adeyanju",
 	"role": "Software Tester",
-	"tag": "brown"
+	"tag": "brown",
+	"thumb": "content/img/data.jpg",
+	"about": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo similique nulla inventore molestias minima consequuntur architecto repellendus ducimus eaque aperiam tenetur, sapiente rerum repellat accusamus dolor, in, esse ad? Alias."
 }, {
 	"name": "Damilola",
 	"role": "Frontend Developer",
-	"tag": "grey"
+	"tag": "grey",
+	"thumb": "content/img/frontend.jpg",
+	"about": "Front-end web development is the development of the graphical user interface of a website, through the use of HTML, CSS, and JavaScript, so that users can view and interact with that website. "
 }]
