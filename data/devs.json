@@ -2,22 +2,27 @@
 	"name": "Joshua",
 	"role": "Frontend Developer",
 	"tag": "green"
+   
 }, {
 	"name": "John",
 	"role": "Backend Developer",
 	"tag": "violet"
+ 
 }, {
 	"name": "Joshua",
 	"role": "Product Manager",
 	"tag": "grey"
+   
 }, {
 	"name": "Robin",
 	"role": "Data Scientist",
 	"tag": "violet"
+  
 }, {
 	"name": "Kehinde",
 	"role": "Product Manager",
 	"tag": "grey"
+    
 }, {
 	"name": "Usman",
 	"role": "Data Analyst",

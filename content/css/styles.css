@@ -23,8 +23,8 @@ h1,h2,h3{
 }
 
 #menu-bar{
-  background: crimson;
-  color: #fff;
+  background: rgb(220, 190, 20);
+  color: #000;
   padding: 10px;
 }
 
