@@ -88,7 +88,7 @@ $http({
     
 }).then(function mySuccess(response){
     $scope.devs = response.data;
-    console.log($scope.devs[0].name);
+    console.log($scope.devs[0].role);
 
 });
 

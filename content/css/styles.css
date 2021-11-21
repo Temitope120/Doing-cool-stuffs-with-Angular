@@ -22,10 +22,16 @@ h1,h2,h3{
   text-transform: uppercase;
 }
 
+
+
+
+
+
 #menu-bar{
-  background: crimson;
-  color: #fff;
+  background: purple;
+  color: #000;
   padding: 10px;
+
 }
 
 #menu-bar h1{
@@ -47,7 +53,7 @@ h1,h2,h3{
 }
 
 #menu-bar a{
-  color: #fff
+  color: green;
 }
 
 main{
