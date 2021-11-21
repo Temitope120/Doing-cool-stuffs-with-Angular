@@ -21,7 +21,7 @@
 	"role": "Data Scientist",
 	"tag": "violet",
 	"thumb": "content/img/frontend.jpg",
-	"about": "Data science is an interdisciplinary field that uses scientific methods, processes, algorithms and systems to extract knowledge and insights from noisy, structured and unstructured data, and apply knowledge and actionable insights from data across a broad range of application domains."
+	"about": "A data scientist is a professional responsible for collecting, analyzing and interpreting extremely large amounts of data. The data scientist role is an offshoot of several traditional technical roles, including mathematician, scientist, statistician and computer professional."
 }, {
 	"name": "Kehinde",
 	"role": "Product Manager",
@@ -39,13 +39,13 @@
 	"role": "Software Tester",
 	"tag": "black",
 	"thumb": "content/img/backend.jpg",
-	"about": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo similique nulla inventore molestias minima consequuntur architecto repellendus ducimus eaque aperiam tenetur, sapiente rerum repellat accusamus dolor, in, esse ad? Alias."
+	"about":"A software tester is involved in the quality assurance stage of software development and deployment. Also conducts automated and manual tests to ensure the software created by developers is fit for purpose and any bugs or issues are removed within a product before it gets deployed to everyday users."
 }, {
 	"name": "Adeyanju",
 	"role": "Software Tester",
 	"tag": "brown",
 	"thumb": "content/img/data.jpg",
-	"about": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo similique nulla inventore molestias minima consequuntur architecto repellendus ducimus eaque aperiam tenetur, sapiente rerum repellat accusamus dolor, in, esse ad? Alias."
+	"about": "A software tester is involved in the quality assurance stage of software development and deployment. Also conducts automated and manual tests to ensure the software created by developers is fit for purpose and any bugs or issues are removed within a product before it gets deployed to everyday users."
 }, {
 	"name": "Damilola",
 	"role": "Frontend Developer",
